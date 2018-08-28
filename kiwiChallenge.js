@@ -74,7 +74,7 @@ console.log(rgbToHex(X)) // Returns #00625a
  */
 
 /**
- * Converts RGB color object hexadecimal representation
+ * Converts RGB color object into hexadecimal notation
  * @param  {Object} rgbColor  - Object containing r,g,b values
  * @return {String} hex color - Hex color string from 000000 to ffffff
  */
