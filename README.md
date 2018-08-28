@@ -1,1 +1,1 @@
-Kiwi Challenge
+Kiwi code challenge for WebExpo 2018
