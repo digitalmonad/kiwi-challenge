@@ -1,4 +1,4 @@
-# Kiwi code challenge for WebExpo 2018
+# Kiwi.com code challenge for WebExpo 2018
 
 ## What is the task?
 
