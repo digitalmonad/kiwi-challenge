@@ -1,6 +1,6 @@
 /**
  * Author: Pavel Kocman
- * GitHub: https://github.com/digitalmonad
+ * GitHub: https://github.com/digitalmonad/kiwi-challenge
  * License: MIT
  *
  * Just type "node kiwiChallenge.js" to run in terminal, no dependencies
@@ -27,7 +27,7 @@
  * kiwi.com\u0000 is the Null-terminated string => if "\u0000" stands for Null
  * => 6b 69 77 69 2e 63 6f 6d 00 in HEX
  *
- * If we split those 9 numbers triplets, then:
+ * If we split those 9 numbers to triplets, then:
  */
 const K = hexToRgb("#00a991") // => Kiwi brand color
 
