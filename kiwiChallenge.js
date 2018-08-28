@@ -58,7 +58,7 @@ const multiply = genBlendFunc('multiply');
 const rotate120 = genRotateFunc(120);
 
 const F = rotate120(multiply(screen(E, M), O))
-const X = substractColors(K, F)
+const X = difference(K, F)
 
 console.log(rgbToHex(X)) // Returns #00625a
 
@@ -234,15 +234,15 @@ function rotate({ h,s,l }, deg){
  * Substracts colorB from colorA
  * @param  {Object} colorA - Object containing r,g,b values
  * @param  {Object} colorB - Object containing r,g,b values
- * @return {Object} color  - Object containing r,g,b values
+ * @return {Object} color  - Object containing r,g,b values, in absolute values
  */
-function substractColors(colorA, colorB){
+function difference(colorA, colorB){
   return (typeof colorA !== 'object' && typeof colorA !== 'object'
   ? 'Error: Input is not proper object.'
   : {
-    r: colorA.r - colorB.r,
-    g: colorA.g - colorB.g,
-    b: colorA.b - colorB.b
+    r: Math.abs(colorA.r - colorB.r),
+    g: Math.abs(colorA.g - colorB.g),
+    b: Math.abs(colorA.b - colorB.b)
   })
 }
 
