@@ -237,7 +237,7 @@ function rotate({ h,s,l }, deg){
  * @return {Object} color  - Object containing r,g,b values
  */
 function substractColors(colorA, colorB){
-  return (typeof colorA !== 'object' || typeof colorA !== 'object'
+  return (typeof colorA !== 'object' && typeof colorA !== 'object'
   ? 'Error: Input is not proper object.'
   : {
     r: colorA.r - colorB.r,
