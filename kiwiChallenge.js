@@ -169,7 +169,7 @@ function hslToRgb({h,s,l}){
    huePrime = Math.floor(huePrime);
    let red;
    let green;
-   var blue;
+   let blue;
 
    if ( huePrime === 0 ){
      red = chroma;
